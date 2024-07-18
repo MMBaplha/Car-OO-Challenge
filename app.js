@@ -5,6 +5,7 @@ class Vehicle {
         this.model = model;
         this.year = year;
     }
+    
     honk(){
         return "Beep"
     }
@@ -31,6 +32,7 @@ class Motorcycle extends Vehicle {
         super(make. model, year)
         this.numWheels = 2;
     }
+
     honk(){
         return "VROOM"
     }
@@ -44,7 +46,7 @@ class Garage {
       this.vehicles = [];
       this.capacity = capacity;
     }
-  
+
     add(newVehicle) {
       if (!newVehicle instanceof Vehicle) {
         return "Only vehicles are allowed in here!";
